@@ -7,7 +7,6 @@ const Event = (props) => {
     if (!name) return null;
 
     let desc = props.info.description.text;
-
     if(desc != null && desc.length >= 250){
         desc = desc.substr(0, 250);
     }
@@ -20,7 +19,6 @@ const Event = (props) => {
                         ? <img src={props.info.logo.url} alt={props.info.name.text} />
                         : ''
                     }
-                    
                 </div>
                 <div className="uk-card-body">
                     <h3 className="uk-card-title">{props.info.name.text}</h3>

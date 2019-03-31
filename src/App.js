@@ -8,7 +8,7 @@ class App extends Component {
   ordenar = 'date'
   state = {
     categorias: [],
-    eventos : []
+    eventos: []
   }
 
   componentDidMount() {
@@ -37,10 +37,9 @@ class App extends Component {
       })
       .then(eventos => {
         this.setState({
-          eventos : eventos.events
+          eventos: eventos.events
         })
       })
-   
   }
 
   render() {
@@ -52,7 +51,7 @@ class App extends Component {
             categorias={this.state.categorias}
             obtenerEventos={this.obtenerEventos}
           />
-          <Events 
+          <Events
             eventos={this.state.eventos}
           />
         </div>
